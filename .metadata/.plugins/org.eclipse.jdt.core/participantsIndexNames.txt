@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/Users/macbookair/Java/spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1179129101.index
+/pptaa_spring_pjt01/src/main/java
+/Users/macbookair/Java/spring/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2613491930.index
+/pptaa_spring_pjt/src/main/java

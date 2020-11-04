@@ -1,0 +1,11 @@
+package com.pptaa.sample;
+
+import org.junit.internal.runners.JUnit4ClassRunner;
+import org.junit.runner.RunWith;
+import org.springframework.context.annotation.Configuration;
+
+@RunWith(JUnit4ClassRunner.class)
+@Configuration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+public class SampleTests {
+
+}
