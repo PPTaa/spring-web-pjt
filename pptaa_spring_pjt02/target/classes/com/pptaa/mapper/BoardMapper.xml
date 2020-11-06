@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pptaa.mapper.BoardMapper">
+
+	<select id="getList" resultType="com.pptaa.domain.BoardVO">
+		select * from tbl_board where bno > 0;
+	</select>
+	
+	<insert id="insert">
+		INSERT into tbl_board (title, content, writer) 
+		values (#{title}, #{content}, #{writer});
+	</insert>
+	
+	<insert id="insertSelectKey">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+			select count(*)+1 as bno FROM tbl_board tb ;
+		</selectKey>
+		INSERT into tbl_board (bno, title, content, writer) 
+		values (#{bno}, #{title}, #{content}, #{writer});
+	
+	</insert>
+
+</mapper>
