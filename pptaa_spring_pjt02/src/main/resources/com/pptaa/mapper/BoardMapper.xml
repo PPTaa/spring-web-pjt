@@ -15,7 +15,7 @@
 	
 	<insert id="insertSelectKey">
 		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
-			select count(*)+1 as bno FROM tbl_board tb ;
+			select max(bno)+1 as bno FROM tbl_board tb ;
 		</selectKey>
 		INSERT into tbl_board (bno, title, content, writer) 
 		values (#{bno}, #{title}, #{content}, #{writer});
