@@ -19,7 +19,23 @@
 		</selectKey>
 		INSERT into tbl_board (bno, title, content, writer) 
 		values (#{bno}, #{title}, #{content}, #{writer});
-	
 	</insert>
+	
+	<select id="read" resultType="com.pptaa.domain.BoardVO">
+		select * from tbl_board where bno = #{bno};
+	</select>
+	
+	<delete id="delete">
+		delete from tbl_board where bno = #{bno};
+	</delete>
+	
+	<update id="update">
+		UPDATE tbl_board 
+		set title = #{title}, 
+		content = #{content}, 
+		writer = #{writer}, 
+		updatedate = CURRENT_TIMESTAMP()
+		WHERE bno = #{bno}; 
+	</update>
 
 </mapper>

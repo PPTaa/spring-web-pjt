@@ -36,18 +36,42 @@ public class BoardMapperTests {
 		log.info(board);
 	}
 	
+//	@Test
+//	public void testInsertSelectKey() {
+//		BoardVO board = new BoardVO();
+//		
+//		board.setTitle("new title select key");
+//		board.setContent("new content select key");
+//		board.setWriter("new writer select key");
+//		
+//		mapper.insertSelectKey(board);
+//		
+//		log.info(board);
+//	}
+	
 	@Test
-	public void testInsertSelectKey() {
-		BoardVO board = new BoardVO();
-		
-		board.setTitle("new title select key");
-		board.setContent("new content select key");
-		board.setWriter("new writer select key");
-		
-		mapper.insertSelectKey(board);
-		
+	public void testRead() {
+		BoardVO board = mapper.read(10);
 		log.info(board);
 	}
+	
+	@Test
+	public void testDelete() {
+		log.info("delete count : " + mapper.delete(100));
+	}
+	
+	@Test
+	public void testUpdate() {
+		BoardVO board = new BoardVO();
+		
+		board.setBno(15);
+		board.setTitle("update title");
+		board.setContent("update content");
+		board.setWriter("update writer");
+		
+		log.info("update info : " + mapper.update(board));
+	}
+	
 	
 	
 }
