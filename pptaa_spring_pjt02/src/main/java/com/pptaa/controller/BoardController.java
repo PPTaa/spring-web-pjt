@@ -25,9 +25,14 @@ public class BoardController {
 	@GetMapping("/list")
 	public void list (Model model) {
 		log.info("list");
-		model.addAttribute("list", boardService.getList());
+		model.addAttribute("list", boardService.getList());	
+		log.info("list start");
 	}
 	
+	@GetMapping("/register")
+	public void register() {
+		
+	}
 	@PostMapping("/register")
 	public String register(BoardVO board, RedirectAttributes rttr) {
 		log.info("register : " + board);
