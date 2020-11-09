@@ -6,19 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="info"/>
+		<item key="selection" value="modify result"/>
 		<list key="findhistory">
-			<item value="debug"/>
-			<item value="sample"/>
-			<item value="info"/>
+			<item value="modify result"/>
+			<item value="result"/>
+			<item value="remove result"/>
+			<item value="22"/>
+			<item value="......"/>
+			<item value="......."/>
+			<item value="........"/>
 			<item value="log4"/>
-			<item value="servlet"/>
-			<item value="11"/>
-			<item value="1.6"/>
-			<item value="test"/>
+			<item value="update info"/>
+			<item value="delete count"/>
+			<item value="delete"/>
+			<item value="10"/>
 			<item value="junit"/>
-			<item value="log4j"/>
-			<item value="log"/>
+			<item value="maria"/>
+			<item value="my"/>
 		</list>
 		<list key="replacehistory">
 			<item value="info"/>
@@ -27,8 +31,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1010"/>
-		<item key="DIALOG_Y_ORIGIN" value="118"/>
+		<item key="DIALOG_X_ORIGIN" value="1009"/>
+		<item key="DIALOG_Y_ORIGIN" value="149"/>
 		<item key="DIALOG_WIDTH" value="294"/>
 		<item key="DIALOG_HEIGHT" value="408"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
