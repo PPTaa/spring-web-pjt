@@ -1,8 +1,0 @@
-package com.pptaa.sample;
-
-import org.junit.runner.RunWith;
-
-@RunWith(SpringClassRunner.class)
-public class SampleTests {
-
-}

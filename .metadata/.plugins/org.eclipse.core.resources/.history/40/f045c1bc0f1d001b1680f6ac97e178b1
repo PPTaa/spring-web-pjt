@@ -1,9 +1,0 @@
-package com.pptaa.mapper;
-
-import org.springframework.stereotype.Component;
-
-
-public interface TimeMapper {
-	
-	
-}

@@ -77,7 +77,9 @@
                                                 <c:out value="${board.bno}" />
                                             </td>
                                             <td>
-                                                <c:out value="${board.title}" />
+                                                <a href="/board/get?bno=<c:out value='${board.bno}'/>">
+                                                    <c:out value="${board.title}" />
+                                                </a>
                                             </td>
                                             <td>
                                                 <c:out value="${board.writer}" />
@@ -179,25 +181,29 @@
     $(document).ready(function () {
 
         var result = '<c:out value="${result}"/>';
-        console.log("modal test");
 
         checkModal(result);
 
-        function checkModal(result) {
+        history.replaceState({}, null, null);
 
-            if (result === "") {
+        function checkModal(result) {
+            console.log("result", result)
+            console.log("if asd", history.state)
+
+            if (result === '' || history.state) {
+            console.log("prevent")
                 return;
             }
             if (parseInt(result) > 0) {
+                console.log("if no zero")
                 $(".modal-body").html("게시글" + parseInt(result) + "번이 등록 되었습니다.");
             }
-
             $("#myModal").modal("show");
         }
 
-        $("#regBtn").on("click", function(){
+        $("#regBtn").on("click", function () {
             self.location = "/board/register";
-        })
+        });
     });
 </script>
 

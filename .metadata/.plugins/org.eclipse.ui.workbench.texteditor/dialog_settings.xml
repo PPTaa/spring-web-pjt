@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="modify result"/>
+		<item key="selection" value="regBtn"/>
 		<list key="findhistory">
+			<item value="regBtn"/>
+			<item value="script"/>
+			<item value="search"/>
+			<item value="togg"/>
+			<item value="dataTables"/>
+			<item value="img"/>
+			<item value="../"/>
+			<item value="vendor"/>
+			<item value="ven"/>
+			<item value="maria"/>
+			<item value="flash"/>
+			<item value="get"/>
+			<item value="resultPage : "/>
 			<item value="modify result"/>
 			<item value="result"/>
-			<item value="remove result"/>
-			<item value="22"/>
-			<item value="......"/>
-			<item value="......."/>
-			<item value="........"/>
-			<item value="log4"/>
-			<item value="update info"/>
-			<item value="delete count"/>
-			<item value="delete"/>
-			<item value="10"/>
-			<item value="junit"/>
-			<item value="maria"/>
-			<item value="my"/>
 		</list>
 		<list key="replacehistory">
 			<item value="info"/>
@@ -31,8 +31,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1009"/>
-		<item key="DIALOG_Y_ORIGIN" value="149"/>
+		<item key="DIALOG_X_ORIGIN" value="1129"/>
+		<item key="DIALOG_Y_ORIGIN" value="153"/>
 		<item key="DIALOG_WIDTH" value="294"/>
 		<item key="DIALOG_HEIGHT" value="408"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
