@@ -9,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.pptaa.domain.BoardVO;
+import com.pptaa.domain.Criteria;
 import com.pptaa.mapper.BoardMapper;
 
 import lombok.Setter;
@@ -44,7 +45,7 @@ public class BoardServiceTests {
 	
 	@Test
 	public void testGetList() {
-		service.getList().forEach(board -> log.info(board));
+		service.getList(new Criteria(1, 10)).forEach(board -> log.info(board));
 	}
 	
 	@Test

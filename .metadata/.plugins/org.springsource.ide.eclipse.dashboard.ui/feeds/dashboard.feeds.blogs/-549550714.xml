@@ -5,7 +5,432 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-11-10T10:14:49Z</updated>
+  <updated>2020-11-11T00:34:51Z</updated>
+  <entry>
+    <title>This Week in Spring - November 10th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/11/this-week-in-spring-november-10th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-11-11:4266</id>
+    <updated>2020-11-11T00:34:51Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s November 10th, 2020, as I write this and I, for one, can not believe that we&amp;rsquo;re closer to 2021 than we are to 2019 at this point. That&amp;rsquo;s insane. Time has absolutely rocketed by in some senses and stood utterly still in others. Odd year, this one. &lt;/p&gt;
+&lt;p&gt;I hope you&amp;rsquo;re all doing well! I&amp;rsquo;m at the Reactive Summit today (virtually, of course). This afternoon I was on a wonderful panel with all sorts of folks from around the ecosystem. And soon, around 17:30 or so, if memory serves, I&amp;rsquo;ll be speaking about RSocket and its use in the Spring ecosystem. &lt;/p&gt;
+&lt;p&gt;Also, tonight, I&amp;rsquo;ll be doing a presentation for Jetbrains - &lt;a href="https://twitter.com/intellijidea/status/1323497643666911232"&gt;&lt;em&gt;Bootiful Kotlin&lt;/em&gt;&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m so looking forward to these events and I hope to see you at either or both of these presentations.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve got a lot of stuff to cover this week so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/05/a-bootiful-podcast-spring-legend-thomas-risberg-on-jdbc-spring-cloud-data-flow-kubernetes-and-so-much-more"&gt;A Bootiful Podcast: Spring legend Thomas Risberg on JDBC, Spring Cloud Data Flow, Kubernetes and so much more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/blog/announcing-general-availability-of-vmware-tanzu-kubernetes-grid-1-2"&gt;Announcing the General Availability of VMware Tanzu Kubernetes Grid 1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://r2dbc.io/2020/11/10/r2dbc-joins-reactive-foundation"&gt;R2DBC joins Reactive Foundation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://adtmag.com/blogs/watersworks/2020/11/new-reactive-manifesto.aspx?m=1"&gt;Jonas Boner on the Reactive Principles&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions"&gt;New in Spring 5.3: Improved Cron Expressions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blog.jetbrains.com/kotlin/2020/11/productive-server-side-development-with-kotlin-stories/"&gt;Productive Server-Side Development With Kotlin: Stories From The Industry – Kotlin Blog | JetBrains&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.vinsguru.com/redis-pubsub-with-spring-boot/"&gt;Redis PubSub With Spring Boot | Vinsguru&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/10/spring-authorization-server-0-0-3-available-now"&gt;Spring Authorization Server 0.0.3 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/10/spring-cloud-hoxton-sr9-has-been-released"&gt;Spring Cloud Hoxton.SR9 has been released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/06/spring-data-2020-0-new-and-noteworthy-a-general-overview"&gt;Spring Data 2020.0 - New and Noteworthy - A general Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/10/spring-framework-5-3-1-and-5-2-11-available-now"&gt;Spring Framework 5.3.1 and 5.2.11 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/11/04/spring-security-5-5-0-m1-released"&gt;Spring Security 5.5.0-M1 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/11/05/the-record-attribute/"&gt;The Record Attribute - What does it mean to be a record at runtime?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/11/10/vmware-github-management/"&gt;VMware on Effective GitHub Management&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/RabbitMQ/status/1326114564455473152"&gt; You have a few RabbitMQ deployments, so how do you monitor them? What is the RabbitMQ Cluster Operator? What about the default metrics configuration? Can this be improved? &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data 2020.0 - New and Noteworthy in Spring Data JDBC 2.1</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/10/spring-data-2020-0-new-and-noteworthy-in-spring-data-jdbc-2-1" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Jens Schauder</name>
+    </author>
+    <id>tag:spring.io,2020-11-05:4260</id>
+    <updated>2020-11-10T22:00:00Z</updated>
+    <content type="html">&lt;p&gt;As part of the 2020.0.0 version of Spring Data, we released Spring Data JDBC 2.1.&lt;br/&gt;This article presents the four most interesting changes in this version.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#use-code-value-code-on-entity-constructor-arguments"&gt;Use &lt;code&gt;@Value&lt;/code&gt; on entity constructor arguments.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#rowmapper-and-resultsetextractor-as-beans"&gt;&lt;code&gt;RowMapper&lt;/code&gt; and &lt;code&gt;ResultSetExtractor&lt;/code&gt; as beans.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#improved-performance-for-entities"&gt;Improved performance for entities.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#support-of-oracles-temporal-types"&gt;Support of Oracles temporal types.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h1&gt;&lt;a href="#use-code-value-code-on-entity-constructor-arguments" class="anchor" name="use-code-value-code-on-entity-constructor-arguments"&gt;&lt;/a&gt;Use &lt;code&gt;@Value&lt;/code&gt; on Entity Constructor Arguments&lt;/h1&gt;
+&lt;p&gt;In some cases, not all the data that goes into an entity comes from the &lt;code&gt;ResultSet&lt;/code&gt; of a query. You now may provide an &lt;code&gt;@Value&lt;/code&gt; annotation with a SPeL expression that is evaluated, and the result is passed as an argument upon construction of the entity.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;private static class WithAtValue {&#xD;
+&#xD;
+  @Id private final Long id;&#xD;
+  private final @Transient String computed;&#xD;
+&#xD;
+  public WithAtValue(Long id,&#xD;
+      @Value(&amp;quot;#root.first_name&amp;quot;) String computed) {&#xD;
+    this.id = id;&#xD;
+    this.computed = computed;&#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The example accesses the &lt;code&gt;first_name&lt;/code&gt; column from the &lt;code&gt;ResultSet&lt;/code&gt;, but the SPeL context also has access to the full application context.&lt;br/&gt;Therefore, you have a flexible way to customize the instantiation of your entities.&lt;/p&gt;&lt;h1&gt;&lt;a href="#code-rowmapper-code-and-code-resultsetextractor-code-as-beans" class="anchor" name="code-rowmapper-code-and-code-resultsetextractor-code-as-beans"&gt;&lt;/a&gt;&lt;code&gt;RowMapper&lt;/code&gt; and &lt;code&gt;ResultSetExtractor&lt;/code&gt; as Beans&lt;/h1&gt;
+&lt;p&gt;When you specify the query to be executed for a repository method by using &lt;code&gt;@Query&lt;/code&gt;, you may optionally provide the type of a &lt;code&gt;RowMapper&lt;/code&gt; or &lt;code&gt;ResultSetExtractor&lt;/code&gt; implementation.&lt;br/&gt;However, since the instances created from these types are not Spring beans, they do not participate in dependency injection.&lt;br/&gt;Therefore, you cannot inject other resources that you might want to use into them.&lt;/p&gt;
+&lt;p&gt;You now may instead specify a reference to a bean that implements &lt;code&gt;RowMapper&lt;/code&gt; or &lt;code&gt;ResultSetExtractor&lt;/code&gt; bu using the &lt;code&gt;rowMapperRef&lt;/code&gt; or &lt;code&gt;resultSetExtractorRef&lt;/code&gt; &lt;code&gt;@Query&lt;/code&gt; attributes, respectively:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;interface CarRepository extends CrudRepository&amp;lt;Car, Long&amp;gt; {&#xD;
+&#xD;
+	@Query(value = &amp;quot;select * from car&amp;quot;, resultSetExtractorRef = &amp;quot;carResultSetExtractorBean&amp;quot;)&#xD;
+	List&amp;lt;Car&amp;gt; findByNameWithResultSetExtractor();&#xD;
+&#xD;
+	@Query(value = &amp;quot;select model from car&amp;quot;, rowMapperRef = &amp;quot;customRowMapperBean&amp;quot;)&#xD;
+	List&amp;lt;String&amp;gt; findByNameWithRowMapperBean();&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Spring Data JDB looks up the beans in the application context by name.&lt;br/&gt;Since they are normal Spring beans, you can freely inject other beans or really do anything with them that the Spring Framework has to offer.&lt;/p&gt;&lt;h1&gt;&lt;a href="#improved-performance-for-entities" class="anchor" name="improved-performance-for-entities"&gt;&lt;/a&gt;Improved Performance for Entities&lt;/h1&gt;
+&lt;p&gt;Spring Data JDBC entities can have their properties set by a constructor, by a setter, or (in the case of immutable entities) by a with-method.&lt;br/&gt;However, if a property is already set by a constructor, it should not get set by a setter or (probably worse) with-method. This avoids the cost of the method call and possibly instance creation.&lt;br/&gt;However, for this, Spring Data JDBC used to check each property to see if it has a matching constructor parameter.&lt;br/&gt;This test is surprisingly expensive and can be avoided by checking once if there is an all-arguments constructor.&lt;br/&gt;In such a case, there is no need to call any setters at all.&lt;br/&gt;With the latest version, Spring Data JDBC does exactly that, resulting in better performance for entities with all-arguments constructors.&lt;br/&gt;So a new performance tip is to provide all-argument constructors.&lt;/p&gt;&lt;h1&gt;&lt;a href="#support-of-oracles-temporal-types" class="anchor" name="support-of-oracles-temporal-types"&gt;&lt;/a&gt;Support of Oracles Temporal Types&lt;/h1&gt;
+&lt;p&gt;Spring Data JDBC has supported temporal types from the very beginning.&lt;br/&gt;However, when we added official support for Oracle, we discovered that Oracle does return a special proprietary type for temporal types that Spring Data JDBC wasn&amp;rsquo;t able to convert to the normal temporal types (such as &lt;code&gt;java.time.Instant&lt;/code&gt; or similar types).&lt;/p&gt;
+&lt;p&gt;We added support for the conversion.&lt;br/&gt;Using temporal data types should not cause more problems with Oracle than with any other database. They can still cause trouble through the power of time zones and daylight savings time, but that is not our problem to solve.&lt;/p&gt;
+&lt;p&gt;Enjoy the new features while we work on the next release.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>New in Spring 5.3: Improved Cron Expressions</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Arjen Poutsma</name>
+    </author>
+    <id>tag:spring.io,2020-11-10:4265</id>
+    <updated>2020-11-10T15:37:34Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;If you regularly listen to &lt;a href="https://bootifulpodcast.fm"&gt;A Bootiful Podcast&lt;/a&gt;, you might have heard about the improvements we made to Spring Framework&amp;#8217;s cron support.
+Cron expressions are mostly used in Spring applications through the &lt;a href="https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#scheduling-annotation-support-scheduled"&gt;&lt;code&gt;@Scheduled&lt;/code&gt; annotation&lt;/a&gt;.
+In Spring 5.3, we introduced the &lt;a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/support/CronExpression.html"&gt;&lt;code&gt;CronExpression&lt;/code&gt;&lt;/a&gt; class, which represents&amp;#8201;&amp;#8212;&amp;#8201;you guessed it&amp;#8201;&amp;#8212;&amp;#8201;a &lt;a href="https://en.wikipedia.org/wiki/Cron#CRON_expression"&gt;cron expression&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;code&gt;CronExpression&lt;/code&gt; replaces &lt;code&gt;CronSequenceGenerator&lt;/code&gt;, which is based on &lt;code&gt;java.util.Calendar&lt;/code&gt; and which has several known issues that none of the Spring team members felt comfortable solving.
+Introducing a new type allowed us to use the superior &lt;code&gt;java.time&lt;/code&gt; APIs, solve the outstanding issues, and (hopefully) introduce new features as well.
+While Spring generally prefers to maintain backward compatible, sometimes we do believe that starting from scratch is the best option.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="usage"&gt;&lt;a class="anchor" href="#usage"&gt;&lt;/a&gt;Usage&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You typically create cron triggers with the &lt;code&gt;@Scheduled&lt;/code&gt; annotation, which uses &lt;code&gt;CronExpression&lt;/code&gt; internally, as of Spring Framework 5.3.
+This means that you can already start using the &lt;a href="#new-features"&gt;New Features&lt;/a&gt; if you are on that version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you want to play around with &lt;code&gt;CronExpression&lt;/code&gt; yourself, you can create one through the static parse method:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="java"&gt;var expression = CronExpression.parse("10 * * * * *");
+var result = expression.next(LocalDateTime.now());
+System.out.println(result);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this sample, &lt;code&gt;expression&lt;/code&gt; represents a cron sequence that triggers 10 seconds past every minute.
+The &lt;code&gt;parse&lt;/code&gt; method takes the well-known string with six space-separated time and date fields:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="literalblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt; ┌───────────── second (0-59)
+ │ ┌───────────── minute (0 - 59)
+ │ │ ┌───────────── hour (0 - 23)
+ │ │ │ ┌───────────── day of the month (1 - 31)
+ │ │ │ │ ┌───────────── month (1 - 12) (or JAN-DEC)
+ │ │ │ │ │ ┌───────────── day of the week (0 - 7)
+ │ │ │ │ │ │          (or MON-SUN -- 0 or 7 is Sunday)
+ │ │ │ │ │ │
+ * * * * * *&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Some rules apply:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A field may be an asterisk (&lt;code&gt;*&lt;/code&gt;), which always stands for &amp;#8220;first-last&amp;#8221;.
+For the day-of-the-month or day-of-the-week fields, a question mark (&lt;code&gt;?&lt;/code&gt;) may be used instead of an asterisk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Two numbers separated with a hyphen (&lt;code&gt;-&lt;/code&gt;) express a range of numbers.
+The specified range is inclusive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Following a range (or &lt;code&gt;*&lt;/code&gt;) with &lt;code&gt;/&lt;/code&gt; specifies the interval of the number&amp;#8217;s value through the range.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;English names can also be used for the day-of-month and day-of-week fields.
+Use the first three letters of the particular day or month (case does not matter).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here are some examples:&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Cron Expression&lt;/th&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 * * * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;top of every hour of every day&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;*/10 * * * * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;every ten seconds&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 8-10 * * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8, 9 and 10 o&amp;#8217;clock of every day&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 6,19 * * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;6:00 AM and 7:00 PM every day&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0/30 8-10 * * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8:00, 8:30, 9:00, 9:30, 10:00 and 10:30 every day&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 9-17 * * MON-FRI&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;on the hour nine-to-five weekdays&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 25 12 ?&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;every Christmas Day at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;next&lt;/code&gt; method returns the next occurrence of the trigger or &lt;code&gt;null&lt;/code&gt; if there is none.
+It takes a &lt;code&gt;java.time.temporal.Temporal&lt;/code&gt; as a parameter, which means it accepts not only &lt;code&gt;LocalDateTime&lt;/code&gt; but also &lt;code&gt;ZonedDateTime&lt;/code&gt; if time-zones are relevant.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="new-features"&gt;&lt;a class="anchor" href="#new-features"&gt;&lt;/a&gt;New Features&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Using the &lt;code&gt;java.time&lt;/code&gt; APIs let us introduce several new features that put Spring&amp;#8217;s support for cron expressions on an equal footing with other schedulers.
+You can start using these features in &lt;code&gt;@Scheduled&lt;/code&gt; as of Spring Framework 5.3.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="macros"&gt;&lt;a class="anchor" href="#macros"&gt;&lt;/a&gt;Macros&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Expressions such as &lt;code&gt;0 0 * * * *&lt;/code&gt; are hard for humans to parse and are, therefore, hard to fix in case of bugs.
+To improve readability, Spring now supports the following macros, which represent commonly used sequences.
+You can use these macros instead of the six-digit value, thus: &lt;code&gt;@Scheduled(cron = "@hourly")&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Macro&lt;/th&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;@yearly&lt;/code&gt; (or &lt;code&gt;@annually&lt;/code&gt;)&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;once a year (&lt;code&gt;0 0 0 1 1 *&lt;/code&gt;)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;@monthly&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;once a month (&lt;code&gt;0 0 0 1 * *&lt;/code&gt;)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;@weekly&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;once a week (&lt;code&gt;0 0 0 * * 0&lt;/code&gt;)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;@daily&lt;/code&gt; (or &lt;code&gt;@midnight&lt;/code&gt;)&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;once a day (&lt;code&gt;0 0 0 * * *&lt;/code&gt;), or&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;@hourly&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;once an hour, (&lt;code&gt;0 0 * * * *&lt;/code&gt;)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="last-days"&gt;&lt;a class="anchor" href="#last-days"&gt;&lt;/a&gt;Last Days&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The day-of-month and day-of-week fields can contain a &lt;code&gt;L&lt;/code&gt; character, which has a different meaning in each field.
+In the day-of-month field, &lt;code&gt;L&lt;/code&gt; stands for &lt;em&gt;the last day of the month&lt;/em&gt;.
+If followed by a negative offset (that is, &lt;code&gt;L-n&lt;/code&gt;), it means &lt;em&gt;&lt;code&gt;n&lt;/code&gt;th-to-last day of the month&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In the day-of-week field, &lt;code&gt;L&lt;/code&gt; stands for &lt;em&gt;the last day of the week&lt;/em&gt;.
+If prefixed by a number or three-letter name (&lt;code&gt;dL&lt;/code&gt; or &lt;code&gt;DDDL&lt;/code&gt;), it means &lt;em&gt;the last day of week (&lt;code&gt;d&lt;/code&gt; or &lt;code&gt;DDD&lt;/code&gt;) in the month&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here are some examples:&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Cron Expression&lt;/th&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 L * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;last day of the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 L-3 * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;third-to-last day of the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 * * 5L&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;last Friday of the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 * * THUL&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;last Thursday of the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="weekdays"&gt;&lt;a class="anchor" href="#weekdays"&gt;&lt;/a&gt;Weekdays&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The day-of-month field can be &lt;code&gt;nW&lt;/code&gt;, which stands for &lt;em&gt;the nearest weekday to day of the month &lt;code&gt;n&lt;/code&gt;&lt;/em&gt;.
+If &lt;code&gt;n&lt;/code&gt; falls on Saturday, this yields the Friday before it.
+If &lt;code&gt;n&lt;/code&gt; falls on Sunday, this yields the Monday after, which also happens if &lt;code&gt;n&lt;/code&gt; is &lt;code&gt;1&lt;/code&gt; and falls on a Saturday (that is: &lt;code&gt;1W&lt;/code&gt; stands for &lt;em&gt;the first weekday of the month&lt;/em&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If the day-of-month field is &lt;code&gt;LW&lt;/code&gt;, it means &lt;em&gt;the last weekday of the month&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here are some examples:&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Cron Expression&lt;/th&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 1W * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;first weekday of the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 LW * *&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;last weekday of the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="second-friday-of-the-month"&gt;&lt;a class="anchor" href="#second-friday-of-the-month"&gt;&lt;/a&gt;Second Friday of the Month&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The day-of-week field can be &lt;code&gt;d#n&lt;/code&gt; (or &lt;code&gt;DDD#n&lt;/code&gt;), which stands for &lt;em&gt;the &lt;code&gt;n&lt;/code&gt;th day of week &lt;code&gt;d&lt;/code&gt; (or &lt;code&gt;DDD&lt;/code&gt;) in the month&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here are some examples:&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Cron Expression&lt;/th&gt;
+&lt;th class="tableblock halign-left valign-top"&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 ? * 5#2&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;the second Friday in the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;0 0 0 ? * MON#1&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;the first Monday in the month at midnight&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Improved cron expression support is only one of the &lt;a href="https://github.com/spring-projects/spring-framework/wiki/What's-New-in-Spring-Framework-5.x#whats-new-in-version-53"&gt;many features&lt;/a&gt; that Spring Framework 5.3 offers and will be part of the forthcoming &lt;a href="https://github.com/spring-projects/spring-boot/milestone/178"&gt;Spring Boot 2.4&lt;/a&gt; release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Authorization Server 0.0.3 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/10/spring-authorization-server-0-0-3-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2020-11-09:4263</id>
+    <updated>2020-11-10T12:02:27Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 0.0.3.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can download it from &lt;a href="https://repo.spring.io/release/"&gt;repo.spring.io&lt;/a&gt; and Maven Central by using the module coordinates:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="groovy"&gt;compile 'org.springframework.security.experimental:spring-security-oauth2-authorization-server:0.0.3'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For additional details on this new project, see the &lt;a href="https://spring.io/blog/2020/04/15/announcing-the-spring-authorization-server"&gt;initial announcement&lt;/a&gt; and &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;project page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The main features delivered in this release are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;OAuth 2.0 Refresh Token Grant&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc6749#section-6"&gt;RFC 6749&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OAuth 2.0 Token Revocation&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc7009"&gt;RFC 7009&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/releases/tag/0.0.3"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/tree/master/samples/boot/oauth2-integration"&gt;sample&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Framework 5.3.1 and 5.2.11 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2020/11/10/spring-framework-5-3-1-and-5-2-11-available-now" />
@@ -815,127 +1240,6 @@ Artem&lt;/p&gt;
 &lt;p&gt;Please note that this release is the last feature branch of the 4.x generation. The next version will be 5.0, and we will share what&amp;rsquo;s coming in it soon, so stay tuned!&lt;/p&gt;
 &lt;p&gt;I would like to thank all contributors who made this release possible! We look forward to your feedback on this release on &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt;, and &lt;a href="https://github.com/spring-projects/spring-batch/issues/new/choose"&gt;Github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/docs/4.3.0/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - October 27th, 2020</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/27/this-week-in-spring-october-27th-2020" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-10-27:4241</id>
-    <updated>2020-10-27T20:53:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s already nearly November in this crazy rollercoaster ride that is 2020. Crazy. &lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve got a ton of stuff to get to so let&amp;rsquo;s waste not a second more.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/10/27/spring-framework-5-3-goes-ga"&gt;Spring Framework 5.3 goes GA&lt;/a&gt; This is a &lt;em&gt;huge&lt;/em&gt; release, and the most important thing we&amp;rsquo;ll look at today. Go read this post first. This release includes a &lt;em&gt;ton&lt;/em&gt; of new features!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/10/22/a-bootiful-podcast-optic-ceo-aidan-cunniffe-on-openapi-contract-testing-and-so-much-more"&gt;A Bootiful Podcast: Optic CEO Aidan Cunniffe on OpenAPI, contract testing, and so much more&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I loved this case study that talks about how VMware (my employer) uses Kotlin &lt;a href="https://kotlinlang.org/lp/mobile/case-studies/vmware/"&gt;Case Studies: VMware - Kotlin Multiplatform Mobile &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/10/26/case-study-aggregator-function-and-processor"&gt;Case Study: Aggregator Function and Processor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/devfestromania/status/1318551497035161601?s=12"&gt;Check out my DevFest Romania presentation - &lt;em&gt;Bootiful Kotlin&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/myfear/status/1319723269747081216?s=12"&gt; The Maven Daemon is kind of like the Gradle deamon in that its a long-running process (but one compiled using GraalVM) that can greatly speed-up the use of Apache Maven&lt;/a&gt;. Anecdotally, I&amp;rsquo;m seeing folks talk about reducing their larger, multi-module builds to 1/3 of the time.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.cloudfoundry.org/blog/cloud-foundrys-proven-developer-experience-comes-to-kubernetes-with-cf-for-k8s-1-0/"&gt;Cloud Foundry’s Proven Developer Experience Comes to Kubernetes with cf-for-k8s 1.0 | Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/10/27/choosing-a-linux-distribution/"&gt;Confessions: Choosing a Linux Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/jvmdeveloperid/status/1318694885562535937?s=12"&gt;I’m so looking forward to the JLove conference and I hope you&amp;rsquo;ll join us&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://inside.java/2020/10/23/jep-392-proposed-to-target-jdk16/"&gt;JEP proposed to target JDK 16: 392: Packaging Tool&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://inside.java/2020/10/26/jep-393-proposed-to-target-jdk16/"&gt;JEP proposed to target JDK 16: 393: Foreign-Memory Access API (Third Incubator)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I&amp;rsquo;ll be doing a webinar for &lt;a href="https://twitter.com/intellijidea/status/1318825553990873099?s=21"&gt;JetBrains (makers of IntelliJ IDEA) - &amp;lsquo;Bootiful Kotlin&amp;rsquo; - Wednesday, Nov 11th 2020, 9 - 10 am CST. Check out this blog post for session details and registration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.infoq.com/news/2020/10/qcon-plus-software-leaders/"&gt;Join Gene Kim, Michael Nygard, Elisabeth Hendrickson, me, and 54 Other Software Leaders at QCon Plus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://devblogs.microsoft.com/cosmosdb/latest-documentation-releases-for-azure-cosmos-db/?WT.mc_id=social-social-adpolak"&gt;Latest documentation releases for Azure Cosmos DB and the Spring Data Azure CosmosDB release&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/javaatmicrosoft/status/1320845192564408326?s=12"&gt;Microsoft wants to know your use of Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://inside.java/2020/10/27/new-candidate-jep-396/"&gt;New candidate JEP: 396: Strongly Encapsulate JDK Internals by Default&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/1KshF3_u_KA"&gt;Paul Czarkowski demonstrates CF-4-K8s (CloudFoundry on Kubernetes). It’s the quintessential Tanzu demonstration. Watch as Paul uses Tanzu Mission Control to deploy a Tanzu Kubernetes distribution, Harbor (the container registry), and to then deploy CF-4-K8s (Cloud Foundry on Kubernetes) in.. 22 minutes!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/mgrzejszczak/status/1319318784981803014?s=12"&gt;Some big changes coming to Spring Cloud Sleuth&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/10/27/spring-framework-5-2-10-and-5-1-19-available-now"&gt;Spring Framework 5.2.10 and 5.1.19 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/10/27/spring-tools-4-8-1-released"&gt;Spring Tools 4.8.1 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/guides/topicals/spring-on-kubernetes/"&gt;Check out our new topical guide, &lt;em&gt;Spring on Kubernetes&lt;/em&gt;, written by our own Ryan Baxter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1320674537399308288"&gt;Mark Heckler was recently on the &lt;em&gt;Path to Principal&lt;/em&gt; podcast discussing software development, Spring, and the upcoming release of his book Spring Boot: Up and Running. Listen here &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spencergibb/spring-cloud-bus-rsocket-sample"&gt; Check out this awesome sample app that uses &lt;code&gt;spring-cloud-bus&lt;/code&gt; with RSocket Routing as the transport&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.3 goes GA</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/27/spring-framework-5-3-goes-ga" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Juergen Hoeller</name>
-    </author>
-    <id>tag:spring.io,2020-10-27:4238</id>
-    <updated>2020-10-27T17:28:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
-&lt;p&gt;On behalf of the Spring Framework team and our contributors, it is my pleasure to announce that Spring Framework 5.3 is generally available from &lt;a href="https://repo.spring.io"&gt;repo.spring.io&lt;/a&gt; as well as Maven Central!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/wiki/What's-New-in-Spring-Framework-5.x#whats-new-in-version-53"&gt;What&amp;rsquo;s New&lt;/a&gt; in Spring Framework 5.3&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#upgrading-to-version-53"&gt;Upgrading&lt;/a&gt; to Spring Framework 5.3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Spring Framework 5.3 requires JDK 8 or higher and specifically embraces &lt;a href="http://openjdk.java.net/projects/jdk/15/"&gt;JDK 15&lt;/a&gt; as the latest OpenJDK release, e.g. with binding support for record classes. As the last feature branch of the 5.x generation, the 5.3.x line is set up for an extended support phase, including JDK 17 LTS next year.&lt;/p&gt;
-&lt;p&gt;The immediate Spring Boot 2.4 and next year&amp;rsquo;s Spring Boot 2.5 release will be based on this framework generation, as well as the incubating support for &lt;a href="https://github.com/spring-projects-experimental/spring-graalvm-native"&gt;Spring native executables on GraalVM&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release includes core &lt;a href="https://r2dbc.io/"&gt;R2DBC&lt;/a&gt; support in the spring-r2dbc module, serving as the foundation for Spring Data R2DBC, and introduces query result streaming for JdbcTemplate. It also comes with &lt;a href="https://github.com/Kotlin/kotlinx.serialization"&gt;Kotlin multiplatform serialization&lt;/a&gt; support for web and messaging endpoints with JSON payloads, and with &lt;a href="https://github.com/rsocket/rsocket-java#rsocket"&gt;RSocket 1.1&lt;/a&gt; support taking advantage of the new RSocketClient and exposing load-balancing.&lt;/p&gt;
-&lt;p&gt;Spring MVC users can get better performance with PathPattern parsing (see Rossen&amp;rsquo;s &lt;a href="https://spring.io/blog/2020/06/30/url-matching-with-pathpattern-in-spring-mvc"&gt;blog post&lt;/a&gt;). For test scenarios, we provide a unified API for MockMvc as well as full HTTP tests, and MockMvc comes with a revised Kotlin DSL. On the WebFlux side, a fully reactive message reader for multipart requests is included now, as well as a WebClient connector for &lt;a href="https://hc.apache.org/httpcomponents-client-5.0.x/"&gt;Apache Http Components 5&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Framework 5.3 is a recommended upgrade for all 5.x and 4.x users. It establishes a stable and future-proof production branch with extended maintenance until 2024, serving as the successor of the equally long-lived 4.3.x line which will reach its end of maintenance soon (December 2020).&lt;/p&gt;
-&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.8.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/27/spring-tools-4-8-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2020-10-27:4240</id>
-    <updated>2020-10-27T15:36:03Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.8.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#quick-reminder" class="anchor" name="quick-reminder"&gt;&lt;/a&gt;quick reminder&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;the Eclipse-based distribution of the Spring Tools 4 requires a JDK11 (or newer) to run on&lt;/li&gt;
-  &lt;li&gt;the Eclipse-based distribution ships with an embedded JDK15 runtime, no need to install or configure a specific JDK to run the IDE on anymore&lt;/li&gt;
-&lt;/ul&gt;&lt;h4&gt;&lt;a href="#additional-changes-and-fixes" class="anchor" name="additional-changes-and-fixes"&gt;&lt;/a&gt;additional changes and fixes&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; new: Added support for Spring Boot multi-document properties files (&lt;a href="https://github.com/spring-projects/sts4/issues/533"&gt;#533&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Support escaping of map keys with &amp;lsquo;[]&amp;rsquo; in Spring Boot property yaml files&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Tolerate &amp;lsquo;.[&amp;rsquo; for map navigation in .properties file&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: support container image creation and container deployment of Spring Boot apps without maven wrapper&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: better process label for live hovers from boot apps running in docker&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: allow docker-deployed boot apps to find each other (via simple network setup inside of docker)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: automatically disable code hotswap when running a Spring Boot app with devtools in debug mode (to avoid conflicts between devtools and hot swap both try to update code in the running process)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; update: updated embedded JRE to JDK15, including the src.zip now&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; update: re-organized Spring-related preference pages&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; update: removed &lt;code&gt;-Xverify:none&lt;/code&gt; and &lt;code&gt;-noverify&lt;/code&gt; from the default fast startup settings for boot app launch configs&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; update: default PWS endpoint URL removed from the dialog to create Cloud Foundry targets in the boot dashboard (since PWS is going away)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: errors appear in log when pausing docker containers&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: do not show breakpoint warning when starting up a Spring Boot app&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: added missing high-res and dark-mode-compatible icons for docker support in Spring Boot dashboard&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: sometimes live hovers do not show up automatically after launching a boot app in docker&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: improved stability when deploying multiple apps simultaneously to docker via the boot dashboard&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: problem showing live request mappings for eureka-based apps&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: dropdown in Spring Symbols view shows up with transparent background on Linux&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; fixed: support pipeline directory as well see (&lt;a href="https://github.com/spring-projects/sts4/issues/525"&gt;#525&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2020-10-23-481-release-incl-language-servers-version-1230"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2020-10-23-481-release-incl-language-servers-version-1230&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Spring Tools 4.8.2 is scheduled to be released in late November 2020.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.2.10 and 5.1.19 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/27/spring-framework-5-2-10-and-5-1-19-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2020-10-27:4239</id>
-    <updated>2020-10-27T14:31:23Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.2.10&lt;/code&gt; and &lt;code&gt;5.1.19&lt;/code&gt; are available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.2.10&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.10.RELEASE"&gt;27 fixes and improvements&lt;/a&gt;. Spring Framework 5.1.19 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.1.19.RELEASE"&gt;16 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Stay tuned for Spring Framework 5.3 GA and follow-up Spring Boot releases &lt;code&gt;2.1.18&lt;/code&gt;, &lt;code&gt;2.2.11&lt;/code&gt;, &lt;code&gt;2.3.5&lt;/code&gt;, and &lt;code&gt;2.4.0-RC1&lt;/code&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.2.10.RELEASE/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

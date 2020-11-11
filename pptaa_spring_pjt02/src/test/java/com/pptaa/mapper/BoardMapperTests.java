@@ -1,5 +1,7 @@
 package com.pptaa.mapper;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.pptaa.domain.BoardVO;
+import com.pptaa.domain.Criteria;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -70,6 +73,16 @@ public class BoardMapperTests {
 		board.setWriter("update writer");
 		
 		log.info("update info : " + mapper.update(board));
+	}
+	
+	@Test
+	public void testPaging() {
+		Criteria criteria = new Criteria();
+		criteria.setAmount(10);
+		criteria.setPageNum(4);
+		List<BoardVO> list = mapper.getListWithPaging(criteria);
+		
+		list.forEach(board -> log.info(board));
 	}
 	
 	

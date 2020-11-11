@@ -3,12 +3,15 @@ package com.pptaa.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.pptaa.domain.BoardVO;
+import com.pptaa.domain.Criteria;
+import com.pptaa.domain.PageDTO;
 import com.pptaa.service.BoardService;
 
 import lombok.AllArgsConstructor;
@@ -23,10 +26,12 @@ public class BoardController {
 	private BoardService boardService;
 	
 	@GetMapping("/list")
-	public void list (Model model) {
-		log.info("list");
-		model.addAttribute("list", boardService.getList());	
-		log.info("list start");
+	public void list (Model model, Criteria cri) {
+		log.info("list" + cri);
+		int total = boardService.getTotalCount(cri);
+		log.info("total : " + total);
+		model.addAttribute("list", boardService.getList(cri));	
+		model.addAttribute("pageMaker", new PageDTO(cri, total));
 	}
 	
 	@GetMapping("/register")
@@ -43,26 +48,35 @@ public class BoardController {
 	}
 	
 	@GetMapping({"/get", "/modify"})
-	public void get(Model model, @RequestParam("bno") int bno) {
-		log.info("/get or modify");
+	public void get(Model model, @RequestParam("bno") int bno, @ModelAttribute("cri") Criteria cri) {
+		log.info("/get or modify"+cri);
 		model.addAttribute("board", boardService.get(bno));
 	}
 	
 	@PostMapping("/modify")
-	public String modify(BoardVO board, RedirectAttributes rttr) {
+	public String modify(BoardVO board, RedirectAttributes rttr, @ModelAttribute("cri") Criteria cri) {
 		log.info("modify : " + board);
+		
 		if (boardService.modify(board)) {
 			rttr.addAttribute("result", "success");
 		}
+
+		rttr.addAttribute("pageNum", cri.getPageNum());
+		rttr.addAttribute("amount", cri.getAmount());
+		
 		return "redirect:/board/list";
 	}
 	
 	@PostMapping("/remove")
-	public String remove(@RequestParam("bno") int bno, RedirectAttributes rttr) {
+	public String remove(@RequestParam("bno") int bno, RedirectAttributes rttr, @ModelAttribute("cri") Criteria cri) {
 		log.info("remove : " + bno);
 		if (boardService.remove(bno)) {
 			rttr.addAttribute("result", "success");
 		}
+
+		rttr.addAttribute("pageNum", cri.getPageNum());
+		rttr.addAttribute("amount", cri.getAmount());
+		
 		return "redirect:/board/list";	
 	}
 	
