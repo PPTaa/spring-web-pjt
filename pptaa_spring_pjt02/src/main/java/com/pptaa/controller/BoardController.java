@@ -54,30 +54,35 @@ public class BoardController {
 	}
 	
 	@PostMapping("/modify")
-	public String modify(BoardVO board, RedirectAttributes rttr, @ModelAttribute("cri") Criteria cri) {
+	public String modify(BoardVO board, RedirectAttributes rttr, Criteria cri) {
 		log.info("modify : " + board);
 		
 		if (boardService.modify(board)) {
 			rttr.addAttribute("result", "success");
 		}
 
-		rttr.addAttribute("pageNum", cri.getPageNum());
-		rttr.addAttribute("amount", cri.getAmount());
+// 		cri.getListLink() 로 대체됨
+//		rttr.addAttribute("pageNum", cri.getPageNum());
+//		rttr.addAttribute("amount", cri.getAmount());
+//		rttr.addAttribute("type", cri.getType());
+//		rttr.addAttribute("keyword", cri.getKeyword());
 		
-		return "redirect:/board/list";
+		return "redirect:/board/list"+cri.getListLink();
 	}
 	
 	@PostMapping("/remove")
-	public String remove(@RequestParam("bno") int bno, RedirectAttributes rttr, @ModelAttribute("cri") Criteria cri) {
+	public String remove(@RequestParam("bno") int bno, RedirectAttributes rttr, Criteria cri) {
 		log.info("remove : " + bno);
 		if (boardService.remove(bno)) {
 			rttr.addAttribute("result", "success");
 		}
 
-		rttr.addAttribute("pageNum", cri.getPageNum());
-		rttr.addAttribute("amount", cri.getAmount());
-		
-		return "redirect:/board/list";	
+// 		cri.getListLink() 로 대체됨
+//		rttr.addAttribute("pageNum", cri.getPageNum());
+//		rttr.addAttribute("amount", cri.getAmount());
+//		rttr.addAttribute("type", cri.getType());
+//		rttr.addAttribute("keyword", cri.getKeyword());
+		return "redirect:/board/list"+cri.getListLink();	
 	}
 	
 }

@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="regBtn"/>
+		<item key="selection" value="cri"/>
 		<list key="findhistory">
+			<item value="criw"/>
+			<item value="cri"/>
+			<item value="pagination"/>
+			<item value="pagnation"/>
+			<item value="dataTable"/>
+			<item value="pageNation"/>
+			<item value="page"/>
 			<item value="regBtn"/>
 			<item value="script"/>
 			<item value="search"/>
@@ -16,13 +23,6 @@
 			<item value="img"/>
 			<item value="../"/>
 			<item value="vendor"/>
-			<item value="ven"/>
-			<item value="maria"/>
-			<item value="flash"/>
-			<item value="get"/>
-			<item value="resultPage : "/>
-			<item value="modify result"/>
-			<item value="result"/>
 		</list>
 		<list key="replacehistory">
 			<item value="info"/>
